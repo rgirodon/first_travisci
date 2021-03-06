@@ -1,9 +1,0 @@
-language: java
-addons:
-  sonarcloud:
-    organization: "rgirodon" # the key of the org you chose at step #3
-    token:      
-      secure: "isbV/OULHR/vLUJh8awEWKyjEi8TqYtVAMfJam23hC4xGgPFRDFGjKznX0tTyCgCxMRK5/IKKLCWWgDpfnF84s3SxldU2J7Ctgdl+gPc5e9v7/xsgv8k/5s3YszNoVr3orNpHmQhiY/0G1TpfMzSIVudEeP2upUabtpgCdqIv9lPn/1Yx8VkNossA+nNlzZtNcRf6oflTTDLX2xjMWLnvXD2krN/pzBaypSQELq3n3WLW7rtBnWOPv9JgxHbAcYZjZ47AOp72cAxZKprUTzc80g4f7ikjoScLM7m/txxshshhl7DgQZlt0A0I1w1jcYIvjZ4+FYhcMUBQVSnG4KSyshGKPod599VljiAF913lc58TONg9ZJz3Htr6iO85IVPJGxB/SHrRivIxix7AOhWNCGQCUgH4unhtSrpavSxIwSYE/Db7CeXZLg3bLqzvge/Lmz4VpobpyGQQBxpH3LsBsqLjytQO+rh7CBb2fA0CxobNijSk02xy7tPBEUXH1SYojMreHzijiZzjmCdPezzgQDHrnZXk2YPNf1XWKAjTMPyogH30HrD/6cpfYEKBTG/KyUZypaHqq8QfQTdeddbtB/C2sZslInObSvU4CJO3SdBP6kSiKOUHBdhhuP2ytlUUgF5MEYEjwoOXam1C5Z5xlCdL3gbm9YrvF5ZMIrS7vI="
-script:
-  # other script steps might be done before running the actual analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=rgirodon_first_travisci
