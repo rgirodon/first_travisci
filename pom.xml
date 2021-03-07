@@ -3,6 +3,11 @@
   <groupId>org.rygn</groupId>
   <artifactId>first_ci_cd</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	  <sonar.projectKey>rgirodon_first_ci_cd</sonar.projectKey>
+	  <sonar.organization>rgirodon</sonar.organization>
+	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependency>

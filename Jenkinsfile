@@ -21,5 +21,12 @@ pipeline {
                 }
             }
         }
+        stage("SonarQube analysis") {
+        	steps {
+            	withSonarQubeEnv(credentialsId: '3b10c69f40f4b0c81554ef52b2adf5eae02f129a') {
+                	sh 'mvn sonar:sonar'
+              	}
+            }
+        }
     }
 }
